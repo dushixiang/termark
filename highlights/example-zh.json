@@ -1,0 +1,74 @@
+[
+  {
+    "enabled": true,
+    "pattern": "\\b(?:ERROR|FAILED|FAIL|FATAL|PANIC|DENIED|DENY|DOWN|CONFLICT|UNRECOGNIZED|INVALID|DROP|ALARM)\\b",
+    "note": "错误/故障/断线警告",
+    "color": "#ff5555"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:SUCCESS|SUCCEEDED|OK|PASSED|DONE|READY|HEALTHY|UP|ESTABLISHED|NORMAL|ONLINE|PERMIT|ACTIVE)\\b",
+    "note": "正常/成功/连通状态",
+    "color": "#50fa7b"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:WARNING|WARN|CHANGED|TRAP|STANDBY|INACTIVE|TIMEOUT)\\b",
+    "note": "警告/状态改变/备用",
+    "color": "#f1fa8c"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b",
+    "note": "IPv4 地址",
+    "color": "#8be9fd"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\\b|\\b(?:[0-9a-fA-F]{1,4}:){1,7}:\\b|\\b(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}\\b",
+    "note": "IPv6 地址",
+    "color": "#7ed321"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:[0-9a-fA-F]{4}-){2}[0-9a-fA-F]{4}\\b|\\b(?:[0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}\\b",
+    "note": "MAC 地址",
+    "color": "#bd93f9"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:GigabitEthernet|XGigabitEthernet|10GE|40GE|100GE|Eth-Trunk|Vlanif|LoopBack)\\s*[0-9/]+\\b",
+    "note": "常见接口名称",
+    "color": "#61aeee"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b\\d{4}-\\d{2}-\\d{2}(?:[ T]\\d{2}:\\d{2}(?::\\d{2})?)?\\b",
+    "note": "日期/时间戳",
+    "color": "#f59e0b"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b\\d{2}:\\d{2}:\\d{2}\\b",
+    "note": "HH:MM:SS 时间",
+    "color": "#f59e0b"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:https?|ssh|ftp|file)://[^\\s]+\\b|\\bexport\\b",
+    "note": "URL/export",
+    "color": "#50e3c2"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\bbox:person\\b|\\blabel=danger\\b|\\bdetected_boxes_num=\\b",
+    "note": "目标检测关键字段",
+    "color": "#f50bd8"
+  },
+  {
+    "enabled": true,
+    "pattern": "\\b(?:message|label|detected_boxes_num)\\b",
+    "note": "常见消息字段",
+    "color": "#27d321"
+  }
+]
